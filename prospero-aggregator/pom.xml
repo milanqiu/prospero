@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.milanqiu.prospero</groupId>
+    <artifactId>prospero-aggregator</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <description>Prospero Aggregator &amp; Parent</description>
+
+    <modules>
+        <module>../prospero-algorithm</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.milanqiu.mimas</groupId>
+            <artifactId>mimas-test-ext</artifactId>
+            <version>${project.custom.mimasVersion}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.milanqiu.mimas</groupId>
+            <artifactId>mimas-jdk-ext</artifactId>
+            <version>${project.custom.mimasVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.milanqiu.mimas</groupId>
+            <artifactId>mimas-tpl-ext</artifactId>
+            <version>${project.custom.mimasVersion}</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.custom.jdkVersion>1.8</project.custom.jdkVersion>
+        <project.custom.mimasVersion>1.0.0-SNAPSHOT</project.custom.mimasVersion>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${project.custom.jdkVersion}</source>
+                    <target>${project.custom.jdkVersion}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
