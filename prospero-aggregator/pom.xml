@@ -6,7 +6,7 @@
 
     <groupId>net.milanqiu.prospero</groupId>
     <artifactId>prospero-aggregator</artifactId>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <description>Prospero Aggregator &amp; Parent</description>
