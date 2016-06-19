@@ -9,7 +9,27 @@
     <version>1.0.1</version>
     <packaging>pom</packaging>
 
+    <name>prospero</name>
     <description>Prospero Aggregator &amp; Parent</description>
+    <url>https://github.com/milanqiu/prospero</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/milanqiu/prospero.git</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Milan Qiu</name>
+            <email>product@milanqiu.net</email>
+        </developer>
+    </developers>
 
     <modules>
         <module>../prospero-algorithm</module>
@@ -45,7 +65,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.5.1</version>
                 <configuration>
                     <source>${project.custom.jdkVersion}</source>
                     <target>${project.custom.jdkVersion}</target>
