@@ -3,7 +3,7 @@ package net.milanqiu.prospero.puddle;
 /**
  * <pre>
  * 问题描述：
- * 用一个整型数组表示位于一段不同高度的连续的墙。现在下起雨来了，那么墙之间的水坑能够装多少水呢？
+ * 用一个整型数组表示一段不同高度的连续的墙。现在下起雨来了，那么墙之间的水坑能够积多少水呢？
  * 例如，对于数组[2, 5, 1, 2, 3, 4, 7, 7, 6]，表示墙：
  * 　　　　　　　　　　　　┌─│─┐
  * 　　　　　　　　　　　　│７　７└─┐
@@ -18,5 +18,5 @@ package net.milanqiu.prospero.puddle;
  * Creation Date: 2015-09-20
  * @author Milan Qiu
  */
-public class PuddleProblem {
+public class PuddlePuzzle {
 }
